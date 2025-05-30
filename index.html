@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="calculadora">
-        <p>Calculadora</p>
+      <div class="display">
+        <input id="resultado" readonly type="number" />
+      </div>
+      <div class="botones">
+        <button onclick="presion">0</button>
+        <button onclick="presion">C</button>
+        <button onclick="presion">=</button>
+        <button onclick="presion">*</button>
+        <button onclick="presion">7</button>
+        <button onclick="presion">8</button>
+        <button onclick="presion">9</button>
+        <button onclick="presion">/</button>
+        <button onclick="presion">4</button>
+        <button onclick="presion">5</button>
+        <button onclick="presion">6</button>
+        <button onclick="presion">-</button>
+        <button onclick="presion">1</button>
+        <button onclick="presion">2</button>
+        <button onclick="presion">3</button>
+        <button onclick="presion">+</button>
+      </div>
     </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
