@@ -6,13 +6,16 @@ function presion(boton) {
 }
 
 function pantalla(valor) {
-  let imprime;
-  imprime = borrar(valor == "C");
-  valor = borrar(valor == "C");
-  imprime = display.value + valor;
+
+  if (valor == "C") {
+    display.value = "";
+    return;
+  }
+
+  let imprime = display.value + valor;
   display.value = imprime;
-  console.log(imprime);
 }
+
 
 function borrar(valor) {
   return "";
